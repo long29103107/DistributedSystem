@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-namespace DistributedSystem.Presentation;
+namespace DistributedSystem.Persistence;
 
 public static class AssemblyReference
 {
