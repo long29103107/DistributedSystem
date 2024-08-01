@@ -6,4 +6,20 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="MassTransit" />
+    <PackageReference Include="MassTransit.Extensions.DependencyInjection" />
+    <PackageReference Include="MassTransit.Newtonsoft" />
+    <PackageReference Include="MassTransit.RabbitMQ" />
+    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" />
+    <PackageReference Include="Newtonsoft.Json" />
+    <PackageReference Include="Quartz" />
+    <PackageReference Include="Quartz.Extensions.Hosting" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DistributedSystem.Application\DistributedSystem.Application.csproj" />
+    <ProjectReference Include="..\DistributedSystem.Contract\DistributedSystem.Contract.csproj" />
+  </ItemGroup>
+
 </Project>

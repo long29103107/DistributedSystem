@@ -52,17 +52,17 @@ builder.Services.AddMediatRApplication();
 builder.Services.AddAutoMapperApplication();
 
 // Configure masstransit rabbitmq
-//builder.Services.AddMasstransitRabbitMQInfrastructure(builder.Configuration);
-//builder.Services.AddQuartzInfrastructure();
-//builder.Services.AddServicesInfrastructure();
-//builder.Services.AddRedisInfrastructure(builder.Configuration);
-//builder.Services.ConfigureServicesInfrastructure(builder.Configuration);
+builder.Services.AddMasstransitRabbitMQInfrastructure(builder.Configuration);
+builder.Services.AddQuartzInfrastructure();
+builder.Services.AddServicesInfrastructure();
+builder.Services.AddRedisInfrastructure(builder.Configuration);
+builder.Services.ConfigureServicesInfrastructure(builder.Configuration);
 
 // Configure Options and SQL => Remember mapcarter
-//builder.Services.AddInterceptorPersistence();
-//builder.Services.ConfigureSqlServerRetryOptionsPersistence(builder.Configuration.GetSection(nameof(SqlServerRetryOptions)));
-//builder.Services.AddSqlServerPersistence();
-//builder.Services.AddRepositoryPersistence();
+builder.Services.AddInterceptorPersistence();
+builder.Services.ConfigureSqlServerRetryOptionsPersistence(builder.Configuration.GetSection(nameof(SqlServerRetryOptions)));
+builder.Services.AddSqlServerPersistence();
+builder.Services.AddRepositoryPersistence();
 
 // Add Middleware => Remember using middleware
 builder.Services.AddTransient<ExceptionHandlingMiddleware>();
